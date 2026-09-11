@@ -2,6 +2,9 @@ const express = require("express");
 const productosRoutes = require("./routes/productos.routes");
 
 const app = express();
+
+app.set("json spaces", 2);
+
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
